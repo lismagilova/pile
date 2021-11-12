@@ -1,0 +1,18 @@
+def primes(limit):
+    val = 1
+    prime = False
+    while val != limit:
+        for i in range(2, val + 1):
+            if val % i == 0:
+                prime = False
+                if i == val:
+                    prime = True
+                break
+        if prime:
+            yield val
+            val = val + 1
+        else:
+            val = val + 1
+            
+prime = primes(10)
+print(next(prime))
