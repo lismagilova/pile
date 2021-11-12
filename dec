@@ -1,0 +1,21 @@
+import time
+
+f = open('dec.txt', 'w')
+def timeit(func):
+    def wrapper():
+        start = time.time()
+        print('Начало в', start)
+        end = time.time()
+        print('Конец в', end)
+        print('Общее время', end - start)
+        results = func()
+        return results
+    return wrapper
+
+@timeit
+def example():
+    print('Middle')
+    return 123
+
+print(example())
+f.close()
