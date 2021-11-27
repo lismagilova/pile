@@ -1,6 +1,6 @@
 import math
 
-class Trapezoid():
+class Triangle():
     def __init__(self, x1, y1, x2, y2, x3, y3):
         self.x1 = x1
         self.y1 = y1
@@ -31,11 +31,11 @@ class Trapezoid():
         print("Площадь:", S, "\n")
 
 
-fis_trian = Trapezoid(1, 2, 5, 3, 7, 4)
+fis_trian = Triangle(1, 2, 5, 3, 7, 4)
 fis_trian.side()
 fis_trian.per()
 fis_trian.area()
-# fis_trian1 = Trapezoid(0, 0, 5, 5, 7, 4)
+# fis_trian1 = Triangle(0, 0, 5, 5, 7, 4)
 # fis_trian1.side()
 # fis_trian1.per()
 # fis_trian1.area()
