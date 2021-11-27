@@ -1,7 +1,6 @@
 import math
 
-
-class trapezoid():
+class Trapezoid():
     def __init__(self, x1, y1, x2, y2, x3, y3, x4, y4):
         self.x1 = x1
         self.y1 = y1
@@ -45,13 +44,13 @@ class trapezoid():
         print("Площадь:", S, "\n")
 
 
-fis_trap = trapezoid(0, 0, 2, 2, 4, 2, 6, 0)
+fis_trap = Trapezoid(0, 0, 1, 1, 3, 1, 5, 0)
 fis_trap.checking()
 fis_trap.side()
 fis_trap.per()
 fis_trap.area()
-fis_trap1 = trapezoid(0, 0, 3, 3, 6, 3, 9, 0)
-fis_trap1.checking()
-fis_trap1.side()
-fis_trap1.per()
-fis_trap1.area()
+# fis_trap1 = Trapezoid(0, 0, 5, 5, 7, 4, 7, 0)
+# fis_trap1.checking()
+# fis_trap1.side()
+# fis_trap1.per()
+# fis_trap1.area()
